@@ -97,10 +97,10 @@ export function ChatBot() {
         onClick={() => setOpen((v) => !v)}
         aria-label="Abrir asistente de IA"
         className={cn(
-          "fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-200 cursor-pointer",
+          "fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-200 cursor-pointer",
           open
             ? "bg-zinc-900 scale-95"
-            : "bg-zinc-900 hover:bg-zinc-700 hover:scale-105"
+            : "bg-zinc-900 hover:bg-zinc-700 animate-float"
         )}
       >
         {open ? (
@@ -117,7 +117,7 @@ export function ChatBot() {
       {/* Chat panel */}
       <div
         className={cn(
-          "fixed bottom-22 left-6 z-50 w-80 bg-white border border-zinc-200 rounded-2xl shadow-xl flex flex-col overflow-hidden transition-all duration-200 origin-bottom-left",
+          "fixed bottom-22 right-6 z-50 w-80 bg-white border border-zinc-200 rounded-2xl shadow-xl flex flex-col overflow-hidden transition-all duration-200 origin-bottom-right",
           open ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
         )}
         style={{ maxHeight: "480px" }}

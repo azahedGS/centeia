@@ -39,7 +39,7 @@ function SemiCircleGauge({ percentage }: { percentage: number }) {
   }
 
   return (
-    <svg viewBox="0 0 180 100" className="w-full max-w-[220px]">
+    <svg viewBox="0 0 180 112" className="w-full max-w-[220px]">
       {/* Background track */}
       <path
         d={arcPath(0, 180)}
@@ -61,18 +61,17 @@ function SemiCircleGauge({ percentage }: { percentage: number }) {
       {/* Center text */}
       <text
         x={cx}
-        y={cy - 4}
+        y={cy + 2}
         textAnchor="middle"
-        className="font-semibold"
         style={{ fontSize: 22, fill: "#0A0A0A", fontFamily: "Inter, sans-serif", fontWeight: 600 }}
       >
         {clampedPct}%
       </text>
       <text
         x={cx}
-        y={cy + 14}
+        y={cy + 18}
         textAnchor="middle"
-        style={{ fontSize: 9, fill: "#A1A1AA", fontFamily: "Inter, sans-serif" }}
+        style={{ fontSize: 9, fill: "#A1A1AA", fontFamily: "Inter, sans-serif", letterSpacing: "0.08em" }}
       >
         OCUPACIÓN
       </text>
