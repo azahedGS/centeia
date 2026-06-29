@@ -13,6 +13,7 @@ import {
   Settings,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { LogoFull } from "@/components/ui/Logo";
 
 const NAV = [
   {
@@ -45,15 +46,7 @@ export function Sidebar() {
     <aside className="fixed inset-y-0 left-0 z-20 w-56 bg-white border-r border-zinc-100 flex flex-col">
       {/* Logo */}
       <div className="px-5 py-5 border-b border-zinc-100">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 bg-zinc-900 rounded-md flex items-center justify-center">
-            <span className="text-white text-xs font-bold tracking-tight">C</span>
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-zinc-900 leading-none">CenteIA</p>
-            <p className="text-[10px] text-zinc-400 mt-0.5">Gestión de Proyectos</p>
-          </div>
-        </div>
+        <LogoFull />
       </div>
 
       {/* Nav */}
